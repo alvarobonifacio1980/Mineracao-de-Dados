@@ -109,6 +109,34 @@ Mineracao-de-Dados/
 └── README.md
 ```
 
+
+## Reprodutibilidade dos dados
+
+| Projeto | Aquisição / arquivo esperado | Status |
+|---|---|---|
+| Pré-processamento / Nova Zelândia | Arquivos fornecidos na disciplina em `01_pre_processamento_eda/data/` | Reproduzível com os arquivos originais |
+| Agrupamento | `trabalho3_dados_4.csv` em `02_agrupamento/data/` | Reproduzível com o arquivo original |
+| Regras de associação | `trabalho4_dados_4.csv` em `03_regras_associacao/data/` | Reproduzível com o arquivo original |
+| Classificação | subbase `maternal_health_risk_subbase_4.csv`; conjunto de origem público no UCI | Reproduzível exatamente com a subbase acadêmica |
+| Regressão PETR4 | coleta automática via brapi e FRED | Reprodutível pela execução do código, sujeito a revisões das fontes |
+
+As bases fornecidas exclusivamente no contexto da disciplina não são redistribuídas sem confirmação explícita de licença. Cada pasta possui um `data/README.md` (ou README próprio) com as instruções específicas.
+
+## Como executar
+
+1. Clone o repositório.
+2. Crie um ambiente virtual Python.
+3. Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Para os trabalhos que usam arquivos locais, siga o README da pasta `data/`.
+5. Abra o notebook correspondente com Jupyter Notebook, JupyterLab ou VS Code.
+
+Os notebooks foram ajustados para usar **caminhos relativos**, evitando dependência de diretórios pessoais ou montagem do Google Drive.
+
 ## Princípios metodológicos
 
 - compreender o problema antes de escolher o algoritmo;
