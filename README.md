@@ -165,3 +165,7 @@ As visualizações são escolhidas conforme o problema:
 
 **Autor:** Álvaro Bonifácio  
 Mestrando em Ciência da Computação — Inteligência Computacional — UFJF
+
+### Integridade da base da Nova Zelândia
+
+O arquivo original `4_New-Zealand.csv` (25.006 registros × 16 colunas) foi recuperado e identificado pelo SHA-256 `2284f8d6c9a45069fecee324c158eda49f6cf02791496ecdded101d35b174c20`. O notebook verifica automaticamente o hash ao usar o arquivo local. **O CSV original ainda precisa ser publicado** em `01_pre_processamento_eda/data/`; enquanto isso, o script de download continua sendo apenas uma alternativa, não reprodução exata.
