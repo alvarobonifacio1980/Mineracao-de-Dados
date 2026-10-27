@@ -110,32 +110,32 @@ Mineracao-de-Dados/
 ```
 
 
-## Reprodutibilidade dos dados
+## Dados e reprodução
 
-| Projeto | Aquisição / arquivo esperado | Status |
+Todos os projetos foram ajustados para execução com **caminhos relativos** e sem dependência de Google Drive/Colab.
+
+| Projeto | Dados | Disponibilidade |
 |---|---|---|
-| Pré-processamento / Nova Zelândia | Arquivos fornecidos na disciplina em `01_pre_processamento_eda/data/` | Reproduzível com os arquivos originais |
-| Agrupamento | `trabalho3_dados_4.csv` em `02_agrupamento/data/` | Reproduzível com o arquivo original |
-| Regras de associação | `trabalho4_dados_4.csv` em `03_regras_associacao/data/` | Reproduzível com o arquivo original |
-| Classificação | subbase `maternal_health_risk_subbase_4.csv`; conjunto de origem público no UCI | Reproduzível exatamente com a subbase acadêmica |
-| Regressão PETR4 | coleta automática via brapi e FRED | Reprodutível pela execução do código, sujeito a revisões das fontes |
+| Pré-processamento / Nova Zelândia | Inside Airbnb — New Zealand, snapshot 05/01/2025 | Download automático pelo notebook e por `data/download_data.py` |
+| Agrupamento | `trabalho3_dados_4.csv` | Incluído no repositório — 2.091 registros |
+| Regras de associação | `trabalho4_dados_4.csv` | Incluído no repositório — 3.882 transações |
+| Classificação | `maternal_health_risk_subbase_4.csv` | Incluído no repositório — 92 registros |
+| Regressão PETR4 | PETR4/brapi + Brent e OVX/FRED | Aquisição automática pelo notebook |
 
-As bases fornecidas exclusivamente no contexto da disciplina não são redistribuídas sem confirmação explícita de licença. Cada pasta possui um `data/README.md` (ou README próprio) com as instruções específicas.
+### Padrão dos notebooks
 
-## Como executar
+Todos os notebooks seguem a mesma lógica de apresentação:
 
-1. Clone o repositório.
-2. Crie um ambiente virtual Python.
-3. Instale as dependências:
+**introdução → objetivo → dados → preparação → análise exploratória → método → resultados → visualizações → interpretação → limitações → conclusão**
 
-```bash
-pip install -r requirements.txt
-```
+As visualizações são escolhidas conforme o problema:
 
-4. Para os trabalhos que usam arquivos locais, siga o README da pasta `data/`.
-5. Abra o notebook correspondente com Jupyter Notebook, JupyterLab ou VS Code.
-
-Os notebooks foram ajustados para usar **caminhos relativos**, evitando dependência de diretórios pessoais ou montagem do Google Drive.
+- histogramas e boxplots para distribuições e valores extremos;
+- gráficos de dispersão e correlação para relações numéricas;
+- método do cotovelo e Silhouette para agrupamento;
+- suporte, confiança e lift para regras de associação;
+- matriz de confusão e importância de atributos para classificação;
+- RMSE por período, estabilidade temporal e comparação com baseline para regressão.
 
 ## Princípios metodológicos
 
