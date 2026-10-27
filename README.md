@@ -116,7 +116,7 @@ Todos os projetos foram ajustados para execução com **caminhos relativos** e s
 
 | Projeto | Dados | Disponibilidade |
 |---|---|---|
-| Pré-processamento / Nova Zelândia | Inside Airbnb — New Zealand, snapshot 05/01/2025 | Download automático pelo notebook e por `data/download_data.py` |
+| Pré-processamento / Nova Zelândia | Inside Airbnb — New Zealand | reconstrução pelo notebook ou `data/download_data.py` a partir de snapshot público |
 | Agrupamento | `trabalho3_dados_4.csv` | Incluído no repositório — 2.091 registros |
 | Regras de associação | `trabalho4_dados_4.csv` | Incluído no repositório — 3.882 transações |
 | Classificação | `maternal_health_risk_subbase_4.csv` | Incluído no repositório — 92 registros |
