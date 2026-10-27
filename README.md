@@ -4,6 +4,23 @@ Coleção de trabalhos desenvolvidos no **Mestrado em Ciência da Computação (
 
 O repositório reúne notebooks executados, interpretação dos resultados e decisões metodológicas tomadas ao longo da disciplina, com foco em **qualidade dos dados, reprodutibilidade, avaliação adequada e prevenção de data leakage**.
 
+## Visão visual dos experimentos
+
+As figuras abaixo foram **extraídas das saídas originais dos notebooks deste repositório**. Representam análises efetivamente documentadas, não exemplos ilustrativos.
+
+| Preparação e análise exploratória | Agrupamento |
+| :---: | :---: |
+| ![Boxplot da variável preço dos anúncios da Nova Zelândia](assets/graficos/boxplot_precos.png) | ![Gráfico de avaliação do agrupamento agrícola](assets/graficos/avaliacao_clusters.png) |
+| Investigação de valores extremos antes de decidir tratamentos. | Comparação visual dos resultados de agrupamento e critérios de seleção. |
+
+### Classificação multiclasse — risco materno
+
+![Matrizes de confusão dos modelos de classificação](assets/graficos/matrizes_confusao.png)
+
+**Como interpretar:** as matrizes mostram acertos e confusões entre classes de risco para os modelos comparados. A interpretação deve considerar especialmente a identificação da classe de alto risco e o tamanho reduzido da amostra: o exercício é metodológico e não fornece ferramenta de diagnóstico clínico.
+
+[Explorar os cinco notebooks](#projetos) · [Consultar fontes e condições de uso](DATA_SOURCES.md)
+
 ## Projetos
 
 ### 1. Pré-processamento e Análise Exploratória
