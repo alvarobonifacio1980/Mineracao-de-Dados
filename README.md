@@ -186,3 +186,7 @@ Mestrando em Ciência da Computação — Inteligência Computacional — UFJF
 ### Integridade da base da Nova Zelândia
 
 O arquivo original `4_New-Zealand.csv` (25.006 registros × 16 colunas) foi recuperado e identificado pelo SHA-256 `2284f8d6c9a45069fecee324c158eda49f6cf02791496ecdded101d35b174c20`. O notebook verifica automaticamente o hash ao usar o arquivo local. **O CSV original está publicado** em `01_pre_processamento_eda/data/`. O download permanece opção secundária.
+
+## Licenciamento e dados
+
+Os notebooks e scripts estão disponíveis publicamente para consulta, mas **ainda não possuem licença de reutilização definida**. A publicação de conjuntos de dados não concede automaticamente direitos de redistribuição. Consulte [proveniência e ressalvas das bases](DATA_SOURCES.md) antes de reutilizar qualquer CSV.
