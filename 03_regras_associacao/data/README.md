@@ -1,15 +1,14 @@
 # Dados — Trabalho 04
 
-Arquivo esperado:
+A base transacional usada no trabalho está incluída neste diretório:
 
-- `trabalho4_dados_4.csv`
+- [trabalho4_dados_4.csv](./trabalho4_dados_4.csv)
 
-A base transacional foi fornecida no contexto da disciplina e **não é redistribuída neste repositório**, pois não foi identificada licença explícita de redistribuição.
+Dimensão original:
 
-Para reproduzir o experimento:
+- **3.882 transações**
+- **132 produtos**
 
-1. obtenha o arquivo original;
-2. coloque-o nesta pasta `data/`;
-3. execute `../trabalho_04_regras_associacao.ipynb`.
+Cada linha representa uma cesta e cada coluna um produto, em representação binária 0/1.
 
-O notebook foi tornado portátil e usa apenas caminho relativo.
+A base foi obtida de fonte pública e é disponibilizada para reprodução exata do experimento com Apriori e FP-Growth.
