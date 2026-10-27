@@ -1,16 +1,25 @@
 # Dados — Trabalho 02
 
-Este projeto utiliza os arquivos:
+## Fonte
 
-- `4_New-Zealand.csv`
-- `4_New-Zealand-validacao.xlsx` (arquivo auxiliar de validação usado no trabalho original)
+A base utilizada é o snapshot público **New Zealand — listings.csv**, do projeto **Inside Airbnb**, referente a **05/01/2025**.
 
-Os arquivos foram fornecidos no contexto da disciplina e **não são redistribuídos neste repositório**, pois não foi identificada licença explícita de redistribuição.
+Fonte oficial:
+https://data.insideairbnb.com/new-zealand/2025-01-05/visualisations/listings.csv
 
-Para reproduzir o notebook:
+Página de dados:
+https://insideairbnb.com/get-the-data/
 
-1. obtenha os arquivos originais utilizados na disciplina;
-2. coloque-os nesta pasta `data/`;
-3. execute o notebook a partir da pasta `01_pre_processamento_eda/`.
+Licença informada pelo provedor: **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
-O notebook foi ajustado para usar caminhos relativos.
+## Como obter
+
+O próprio notebook baixa o arquivo automaticamente caso `data/4_New-Zealand.csv` não exista.
+
+Também é possível executar:
+
+```bash
+python data/download_data.py
+```
+
+O trabalho original utilizou **25.006 registros e 16 atributos**. O arquivo `4_New-Zealand-validacao.xlsx` não é uma entrada: ele é gerado pelo notebook como apoio à validação visual.
