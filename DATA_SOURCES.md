@@ -4,7 +4,7 @@ Este repositório combina **arquivos CSV incluídos**, um **snapshot público re
 
 | Trabalho | Base | Situação no GitHub | Nota de reprodução |
 |---|---|---|---|
-| 01 — EDA | Inside Airbnb, Nova Zelândia | Original acadêmico não incluído; script de download | O snapshot online pode ser diferente da base original de 25.006 linhas; **não reproduz necessariamente** os números publicados |
+| 01 — EDA | Inside Airbnb, Nova Zelândia | Original acadêmico não incluído; suporte a arquivo alternativo 10_New-Zealand.csv e download público | O snapshot online pode ser diferente da base original de 25.006 linhas; **não reproduz necessariamente** os números publicados |
 | 02 — Agrupamento | Produção agrícola | `02_agrupamento/data/trabalho3_dados_4.csv` | Cópia do experimento incluída; fonte primária/licença ainda precisam ser identificadas |
 | 03 — Associação | Cestas de compras | `03_regras_associacao/data/trabalho4_dados_4.csv` | Cópia do experimento incluída; fonte primária/licença ainda precisam ser identificadas |
 | 04 — Classificação | Maternal Health Risk (UCI), subbase | `04_classificacao/data/maternal_health_risk_subbase_4.csv` | Subconjunto de 92 registros; ver termos e citação do dataset UCI |
@@ -28,3 +28,5 @@ Este repositório combina **arquivos CSV incluídos**, um **snapshot público re
 ## Pendência de proveniência
 
 Os nomes dos arquivos de agrupamento e de associação não são suficientes para identificar com segurança o URL original e a licença aplicável. Até a confirmação, preservar o arquivo de origem, os metadados e esta ressalva; **não atribuir licença CC/UCI sem evidência**. O fato de os CSVs já estarem disponíveis neste repositório não elimina a necessidade de conferir os termos de redistribuição.
+
+**Atualização de 27/10/2026:** o autor forneceu `10_New-Zealand.csv` (23.941 linhas), que pode ser utilizado localmente como alternativa em `01_pre_processamento_eda/data/`, sem ser confundido com o original de 25.006 linhas. As três bases CSV já versionadas de agrupamento, associação e classificação foram confrontadas por SHA de blob Git e são exatamente idênticas aos arquivos fornecidos.
