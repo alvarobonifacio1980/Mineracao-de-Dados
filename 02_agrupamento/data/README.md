@@ -1,15 +1,14 @@
 # Dados — Trabalho 03
 
-Arquivo esperado:
+A base usada no trabalho está incluída neste diretório:
 
-- `trabalho3_dados_4.csv`
+- [trabalho3_dados_4.csv](./trabalho3_dados_4.csv)
 
-A base foi fornecida no contexto da disciplina e **não é redistribuída aqui**, pois não foi identificada licença explícita de redistribuição.
+Dimensão original validada pelo notebook:
 
-Para reproduzir o experimento:
+- **2.091 registros**
+- **45 atributos**
 
-1. obtenha o arquivo original;
-2. coloque-o nesta pasta `data/`;
-3. execute `../trabalho_03_agrupamento.ipynb`.
+O notebook utiliza caminho relativo e pode ser executado diretamente a partir da pasta do projeto.
 
-O notebook não depende mais do Google Drive ou de caminhos específicos do Colab.
+A base foi obtida de fonte pública e é mantida aqui para permitir a reprodução exata dos resultados apresentados.
