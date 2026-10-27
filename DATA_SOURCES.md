@@ -4,7 +4,7 @@ Este repositório combina **arquivos CSV incluídos**, um **snapshot público re
 
 | Trabalho | Base | Situação no GitHub | Nota de reprodução |
 |---|---|---|---|
-| 01 — EDA | Inside Airbnb, Nova Zelândia | Original acadêmico não incluído; suporte a arquivo alternativo 10_New-Zealand.csv e download público | O snapshot online pode ser diferente da base original de 25.006 linhas; **não reproduz necessariamente** os números publicados |
+| 01 — EDA | Inside Airbnb, Nova Zelândia | Arquivo acadêmico original incluído; download alternativo opcional | A base acadêmica original de 25.006 linhas está incluída; snapshots externos podem diferir |
 | 02 — Agrupamento | Produção agrícola | `02_agrupamento/data/trabalho3_dados_4.csv` | Cópia do experimento incluída; fonte primária/licença ainda precisam ser identificadas |
 | 03 — Associação | Cestas de compras | `03_regras_associacao/data/trabalho4_dados_4.csv` | Cópia do experimento incluída; fonte primária/licença ainda precisam ser identificadas |
 | 04 — Classificação | Maternal Health Risk (UCI), subbase | `04_classificacao/data/maternal_health_risk_subbase_4.csv` | Subconjunto de 92 registros; ver termos e citação do dataset UCI |
@@ -31,4 +31,4 @@ Os nomes dos arquivos de agrupamento e de associação não são suficientes par
 
 **Atualização de 27/10/2026:** o autor forneceu `10_New-Zealand.csv` (23.941 linhas), que pode ser utilizado localmente como alternativa em `01_pre_processamento_eda/data/`, sem ser confundido com o original de 25.006 linhas. As três bases CSV já versionadas de agrupamento, associação e classificação foram confrontadas por SHA de blob Git e são exatamente idênticas aos arquivos fornecidos.
 
-**Base original recuperada:** arquivo `4_New-Zealand.csv` (25.006 × 16), identificado por SHA-256 `2284f8d6c9a45069fecee324c158eda49f6cf02791496ecdded101d35b174c20`, verificado em 27/10/2026. Ainda **não publicado no GitHub**. O notebook valida esse hash ao encontrá-lo localmente; o arquivo alternativo não é equivalente.
+**Base original recuperada:** arquivo `4_New-Zealand.csv` (25.006 × 16), identificado por SHA-256 `2284f8d6c9a45069fecee324c158eda49f6cf02791496ecdded101d35b174c20`, verificado em 27/10/2026. **Publicado no GitHub** em `01_pre_processamento_eda/data/4_New-Zealand.csv`. O notebook valida esse hash ao encontrá-lo localmente; o arquivo alternativo não é equivalente.
