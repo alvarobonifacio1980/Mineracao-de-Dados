@@ -112,15 +112,23 @@ Mineracao-de-Dados/
 
 ## Dados e reprodução
 
-Todos os projetos foram ajustados para execução com **caminhos relativos** e sem dependência de Google Drive/Colab.
+Os notebooks utilizam **caminhos relativos à pasta de cada trabalho**, sem dependência de montagem do Google Drive/Colab. Para execução local, abra o notebook a partir da respectiva pasta (não da raiz do repositório). A reprodução exata depende da versão dos dados e das fontes de aquisição.
 
 | Projeto | Dados | Disponibilidade |
 |---|---|---|
-| Pré-processamento / Nova Zelândia | Inside Airbnb — New Zealand | reconstrução pelo notebook ou `data/download_data.py` a partir de snapshot público |
+| Pré-processamento / Nova Zelândia | Inside Airbnb — New Zealand | snapshot público via notebook ou `data/download_data.py` (não necessariamente idêntico ao arquivo original da disciplina) |
 | Agrupamento | `trabalho3_dados_4.csv` | Incluído no repositório — 2.091 registros |
 | Regras de associação | `trabalho4_dados_4.csv` | Incluído no repositório — 3.882 transações |
 | Classificação | `maternal_health_risk_subbase_4.csv` | Incluído no repositório — 92 registros |
 | Regressão PETR4 | PETR4/brapi + Brent e OVX/FRED | Aquisição automática pelo notebook |
+
+Para verificar estrutura, sintaxe Python básica e existência dos CSV locais sem executar os modelos:
+
+```bash
+python tools/auditar_portfolio.py
+```
+
+A auditoria também é executada automaticamente por GitHub Actions a cada push ou pull request. **Ela não substitui a execução ponta a ponta dos notebooks.** Consulte [proveniência e limitações de redistribuição](DATA_SOURCES.md).
 
 ### Padrão dos notebooks
 
