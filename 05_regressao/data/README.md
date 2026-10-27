@@ -1,11 +1,13 @@
 # Dados — Trabalho 07
 
-O notebook realiza a aquisição dos dados diretamente por código, de fontes públicas:
+Os dados do experimento são públicos e adquiridos automaticamente pelo próprio notebook.
 
-- **PETR4** — brapi: https://brapi.dev/
-- **Brent spot** — FRED, série `DCOILBRENTEU`: https://fred.stlouisfed.org/series/DCOILBRENTEU
-- **OVX** — FRED, série `OVXCLS`: https://fred.stlouisfed.org/series/OVXCLS
+## Fontes
 
-Por se tratar de séries que podem ser revisadas pelos provedores, o notebook registra a metodologia e a data da reprodução. Os números podem apresentar pequenas diferenças se a fonte histórica for atualizada.
+- **PETR4:** brapi
+- **Brent (DCOILBRENTEU):** FRED
+- **OVX (OVXCLS):** FRED
 
-Não é necessário baixar arquivos manualmente: a coleta faz parte da execução do notebook.
+A aquisição por código é preferida porque mantém a origem rastreável e evita cópias desnecessárias de séries públicas que podem ser revisadas pelos provedores.
+
+Para reprodutibilidade, o notebook registra período, quantidade de observações e verificações de disponibilidade temporal.
