@@ -1,25 +1,14 @@
 # Dados — Trabalho 02
 
-## Fonte
+## Fonte pública
 
-A base utilizada é o snapshot público **New Zealand — listings.csv**, do projeto **Inside Airbnb**, referente a **05/01/2025**.
+A base utilizada no trabalho é derivada dos dados públicos do **Inside Airbnb — New Zealand**.
 
 Fonte oficial:
-https://data.insideairbnb.com/new-zealand/2025-01-05/visualisations/listings.csv
-
-Página de dados:
 https://insideairbnb.com/get-the-data/
 
-Licença informada pelo provedor: **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+Licença informada pelo projeto Inside Airbnb: **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
-## Como obter
+O notebook acadêmico original utilizou o arquivo `4_New-Zealand.csv`, com um snapshot específico já tratado para a atividade. Como o arquivo exato não está mais disponível no acervo conectado desta conversa, o repositório mantém a fonte oficial e um script de aquisição para reconstrução a partir do snapshot público.
 
-O próprio notebook baixa o arquivo automaticamente caso `data/4_New-Zealand.csv` não exista.
-
-Também é possível executar:
-
-```bash
-python data/download_data.py
-```
-
-O trabalho original utilizou **25.006 registros e 16 atributos**. O arquivo `4_New-Zealand-validacao.xlsx` não é uma entrada: ele é gerado pelo notebook como apoio à validação visual.
+> Para reproduzir **numericamente** os resultados originais, use o mesmo snapshot da disciplina. Snapshots mais recentes podem alterar quantidade de registros e estatísticas.
