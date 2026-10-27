@@ -1,14 +1,13 @@
 # Dados — Trabalho 03
 
-A base usada no trabalho está incluída neste diretório:
+Arquivo incluído neste repositório:
 
-- [trabalho3_dados_4.csv](./trabalho3_dados_4.csv)
+- `trabalho3_dados_4.csv`
 
-Dimensão original validada pelo notebook:
+A base é pública e foi utilizada no trabalho acadêmico de agrupamento. O arquivo publicado é a **mesma cópia usada no notebook**, preservando a reprodutibilidade dos resultados.
 
-- **2.091 registros**
-- **45 atributos**
+O notebook usa caminho relativo:
 
-O notebook utiliza caminho relativo e pode ser executado diretamente a partir da pasta do projeto.
-
-A base foi obtida de fonte pública e é mantida aqui para permitir a reprodução exata dos resultados apresentados.
+```python
+data/trabalho3_dados_4.csv
+```
