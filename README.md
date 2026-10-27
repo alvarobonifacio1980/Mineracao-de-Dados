@@ -116,7 +116,7 @@ Os notebooks utilizam **caminhos relativos à pasta de cada trabalho**, sem depe
 
 | Projeto | Dados | Disponibilidade |
 |---|---|---|
-| Pré-processamento / Nova Zelândia | Inside Airbnb — New Zealand | snapshot público via notebook ou `data/download_data.py` (não necessariamente idêntico ao arquivo original da disciplina) |
+| Pré-processamento / Nova Zelândia | Inside Airbnb — New Zealand | original acadêmico ausente; aceita `data/10_New-Zealand.csv` local (23.941 linhas) ou baixa snapshot público — ambos podem diferir do original |
 | Agrupamento | `trabalho3_dados_4.csv` | Incluído no repositório — 2.091 registros |
 | Regras de associação | `trabalho4_dados_4.csv` | Incluído no repositório — 3.882 transações |
 | Classificação | `maternal_health_risk_subbase_4.csv` | Incluído no repositório — 92 registros |
