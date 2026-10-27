@@ -5,6 +5,7 @@ Não executa modelos nem realiza downloads.
 from pathlib import Path
 import ast
 import csv
+import hashlib
 import json
 import sys
 
@@ -47,7 +48,7 @@ for folder, notebook, csv_name in PROJECTS:
     if csv_name is not None:
         data_path = ROOT / folder / "data" / csv_name
         if not data_path.is_file():
-            label = "AVISO" if folder == "01_pre_processamento_eda" else "ERRO"
+            label = "ERRO"
             if label == "ERRO":
                 errors += 1
             print(f"{label} dados: {data_path.relative_to(ROOT)} ausente")
@@ -58,6 +59,14 @@ for folder, notebook, csv_name in PROJECTS:
                     header = next(reader)
                     assert header and len(header) > 1
                     count = sum(1 for _ in reader)
+                if folder == "01_pre_processamento_eda":
+                    sha_esperado = "2284f8d6c9a45069fecee324c158eda49f6cf02791496ecdded101d35b174c20"
+                    sha_obtido = hashlib.sha256(data_path.read_bytes()).hexdigest()
+                    if sha_obtido != sha_esperado or count != 25006 or len(header) != 16:
+                        errors += 1
+                        print(f"ERRO base original: hash={sha_obtido}, linhas={count}, colunas={len(header)}")
+                    else:
+                        print("OK base original: SHA-256, 25.006 linhas, 16 colunas")
                 print(f"OK dados: {csv_name} ({count} linhas de dados)")
             except (OSError, UnicodeError, StopIteration, AssertionError) as exc:
                 errors += 1
