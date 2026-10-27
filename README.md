@@ -116,7 +116,7 @@ Os notebooks utilizam **caminhos relativos à pasta de cada trabalho**, sem depe
 
 | Projeto | Dados | Disponibilidade |
 |---|---|---|
-| Pré-processamento / Nova Zelândia | Inside Airbnb — New Zealand | original acadêmico ausente; aceita `data/10_New-Zealand.csv` local (23.941 linhas) ou baixa snapshot público — ambos podem diferir do original |
+| Pré-processamento / Nova Zelândia | Inside Airbnb — New Zealand | `data/4_New-Zealand.csv` original incluído (25.006 registros); integridade verificada por SHA-256 |
 | Agrupamento | `trabalho3_dados_4.csv` | Incluído no repositório — 2.091 registros |
 | Regras de associação | `trabalho4_dados_4.csv` | Incluído no repositório — 3.882 transações |
 | Classificação | `maternal_health_risk_subbase_4.csv` | Incluído no repositório — 92 registros |
@@ -168,4 +168,4 @@ Mestrando em Ciência da Computação — Inteligência Computacional — UFJF
 
 ### Integridade da base da Nova Zelândia
 
-O arquivo original `4_New-Zealand.csv` (25.006 registros × 16 colunas) foi recuperado e identificado pelo SHA-256 `2284f8d6c9a45069fecee324c158eda49f6cf02791496ecdded101d35b174c20`. O notebook verifica automaticamente o hash ao usar o arquivo local. **O CSV original ainda precisa ser publicado** em `01_pre_processamento_eda/data/`; enquanto isso, o script de download continua sendo apenas uma alternativa, não reprodução exata.
+O arquivo original `4_New-Zealand.csv` (25.006 registros × 16 colunas) foi recuperado e identificado pelo SHA-256 `2284f8d6c9a45069fecee324c158eda49f6cf02791496ecdded101d35b174c20`. O notebook verifica automaticamente o hash ao usar o arquivo local. **O CSV original está publicado** em `01_pre_processamento_eda/data/`. O download permanece opção secundária.
