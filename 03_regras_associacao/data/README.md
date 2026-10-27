@@ -1,14 +1,9 @@
 # Dados — Trabalho 04
 
-A base transacional usada no trabalho está incluída neste diretório:
+Arquivo incluído neste repositório:
 
-- [trabalho4_dados_4.csv](./trabalho4_dados_4.csv)
+- `trabalho4_dados_4.csv`
 
-Dimensão original:
+A base transacional é pública e foi utilizada no trabalho acadêmico de regras de associação. O arquivo publicado é a **mesma cópia usada no notebook**.
 
-- **3.882 transações**
-- **132 produtos**
-
-Cada linha representa uma cesta e cada coluna um produto, em representação binária 0/1.
-
-A base foi obtida de fonte pública e é disponibilizada para reprodução exata do experimento com Apriori e FP-Growth.
+Cada linha representa uma transação e cada coluna representa um produto em formato binário (0/1).
